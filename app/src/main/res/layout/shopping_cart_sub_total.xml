@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_top_bottom_margin"
+        android:background="@color/grey_color"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right|center">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBTOTAL" />
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_marginTop="@dimen/default_side_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHIPPING"
+                android:textColor="@color/shipping_tv_color"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                android:layout_marginTop="@dimen/default_side_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL AMOUNT" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right|center">
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                android:id="@+id/tvSubTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SubTotal Value" />
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:id="@+id/tvShippingCharge"
+                android:layout_marginTop="@dimen/default_side_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Charge"
+                android:textColor="@color/shipping_tv_color"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                android:id="@+id/tvTotalAmountValue"
+                android:layout_marginTop="@dimen/default_side_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount Value" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line_grey">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/default_top_bottom_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/llContinueShopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/default_side_margin_large"
+            android:gravity="center"
+            android:paddingTop="@dimen/default_side_margin"
+            android:paddingBottom="@dimen/default_side_margin"
+            android:background="@drawable/black_border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_black"
+                android:rotation="180"/>
+
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE SHOPPING"
+                android:paddingLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCheckout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/default_side_margin_large"
+            android:gravity="center"
+            android:paddingTop="@dimen/default_side_margin"
+            android:paddingBottom="@dimen/default_side_margin"
+            android:background="@android:color/black">
+
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHECKOUT"
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_white"
+                android:paddingLeft="2dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
