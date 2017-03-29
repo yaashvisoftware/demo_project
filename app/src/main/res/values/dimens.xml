@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grey_line_height">2dp</dimen>
+    <dimen name="default_top_bottom_margin">10dp</dimen>
+    <dimen name="default_top_bottom_margin_large">20dp</dimen>
+    <dimen name="default_side_margin">5dp</dimen>
+    <dimen name="default_side_margin_large">10dp</dimen>
+    <dimen name="item_color_width">20dp</dimen>
+
+
+</resources>
