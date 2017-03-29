@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/menu_home"
+            android:title="@string/home"
+            android:icon="@mipmap/ic_launcher"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/menu_search"
+            android:title="@string/search"
+            android:icon="@mipmap/ic_launcher"
+            app:showAsAction="always|withText"/>
+
+        <item
+            android:id="@+id/menu_cart"
+            android:title="@string/cart"
+            android:icon="@mipmap/ic_launcher"
+            app:showAsAction="always|withText"/>
+
+   <item
+        android:id="@+id/menu_account"
+        android:title="@string/account"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always|withText"/>
+
+        <!-- <item
+            android:id="@+id/menu_more"
+            android:title="@string/more"
+            android:icon="@mipmap/ic_launcher"
+            app:showAsAction="always|withText" />-->
+
+</menu>
