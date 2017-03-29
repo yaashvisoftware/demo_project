@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,9 +21,10 @@
             android:orientation="vertical"
             android:gravity="right|center">
 
-            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/other_tv_sizes"
                 android:text="SUBTOTAL" />
 
             <com.spice.spicestyle.textviewsbuttons.SimpleTextView
@@ -30,12 +32,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SHIPPING"
-                android:textColor="@color/shipping_tv_color"/>
+                android:textColor="@color/shipping_tv_color"
+                android:textSize="@dimen/other_tv_sizes"/>
 
-            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:layout_marginTop="@dimen/default_side_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/other_tv_sizes"
                 android:text="TOTAL AMOUNT" />
 
         </LinearLayout>
@@ -46,26 +50,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="right|center">
-            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:id="@+id/tvSubTotalValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SubTotal Value" />
+                android:text="\u20B9 7600"
+                android:textSize="@dimen/other_tv_sizes"/>
 
             <com.spice.spicestyle.textviewsbuttons.SimpleTextView
                 android:id="@+id/tvShippingCharge"
                 android:layout_marginTop="@dimen/default_side_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shipping Charge"
-                android:textColor="@color/shipping_tv_color"/>
+                android:text="\u20B9 0"
+                android:textColor="@color/shipping_tv_color"
+                android:textSize="@dimen/other_tv_sizes"/>
 
-            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:id="@+id/tvTotalAmountValue"
                 android:layout_marginTop="@dimen/default_side_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total Amount Value" />
+                android:text="\u20B9 7600"
+                android:textSize="@dimen/other_tv_sizes" />
         </LinearLayout>
     </LinearLayout>
 
@@ -90,8 +97,8 @@
             android:orientation="horizontal"
             android:layout_marginRight="@dimen/default_side_margin_large"
             android:gravity="center"
-            android:paddingTop="@dimen/default_side_margin"
-            android:paddingBottom="@dimen/default_side_margin"
+            android:paddingTop="@dimen/default_top_bottom_margin"
+            android:paddingBottom="@dimen/default_top_bottom_margin"
             android:background="@drawable/black_border">
 
             <ImageView
@@ -116,11 +123,11 @@
             android:orientation="horizontal"
             android:layout_marginLeft="@dimen/default_side_margin_large"
             android:gravity="center"
-            android:paddingTop="@dimen/default_side_margin"
-            android:paddingBottom="@dimen/default_side_margin"
+            android:paddingTop="@dimen/default_top_bottom_margin"
+            android:paddingBottom="@dimen/default_top_bottom_margin"
             android:background="@android:color/black">
 
-            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CHECKOUT"

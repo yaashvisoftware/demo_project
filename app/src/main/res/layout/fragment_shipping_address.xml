@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/default_top_bottom_margin"
+    android:paddingLeft="@dimen/default_top_bottom_margin"
+    android:paddingRight="@dimen/default_top_bottom_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tvNumberOfItems"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+            android:layout_marginBottom="@dimen/default_top_bottom_margin"
+            android:text="Shipping Address"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/number_of_items_size"
+            android:background="@android:color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:paddingLeft="@dimen/default_top_bottom_margin"
+                    android:paddingTop="@dimen/default_top_bottom_margin"
+                    android:orientation="vertical">
+
+                    <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                        android:id="@+id/tvUserId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/other_tv_sizes"
+                        android:text="perfText1010"
+                        />
+
+                    <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_side_margin"
+                        android:text="H. No. 425\nRourkela\nOrissa\nPhone No. 0122-432567765"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_top_bottom_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_image"
+                    android:background="@drawable/gray_bg_with_gray_border"
+                    android:padding="@dimen/default_side_margin"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/default_side_margin"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gray_bg_with_gray_border"
+                    android:text="Set Default"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_top_bottom_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/black_border"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/default_top_bottom_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"/>
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Address"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@color/black_light"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_top_bottom_margin">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue To Payment"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.spice.spicestyle.textviewsbuttons.BlackTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+            android:text="1 Items"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/default_top_bottom_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/default_top_bottom_margin_large">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:id="@+id/tvOrderTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Total"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_toRightOf="@+id/tvOrderTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Total"
+                android:textColor="@color/hyperlink_text_color"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:id="@+id/tvOrderTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs. 9000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/default_side_margin">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Free"
+                android:textColor="@color/shipping_tv_color"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="@dimen/default_top_bottom_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/default_side_margin">
+
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"/>
+
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs. 9000"
+                android:textColor="@color/shipping_tv_color"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

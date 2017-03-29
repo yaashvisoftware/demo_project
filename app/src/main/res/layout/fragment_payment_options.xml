@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tvNumberOfItems"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+            android:layout_marginBottom="@dimen/default_top_bottom_margin"
+            android:text="Payment Method"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/number_of_items_size"
+            android:background="@android:color/white">
+
+        </com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@color/grey_color"
+                android:paddingLeft="@dimen/default_side_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item"
+                    android:src="@drawable/checkbox_withcheck"/>
+
+                <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Payment Method"
+                    android:layout_marginLeft="@dimen/default_side_margin"/>
+
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_grey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/default_side_margin"
+                android:gravity="center_vertical">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit/Debit Card"
+                    android:layout_marginLeft="@dimen/default_side_margin"
+                    android:textColor="@color/shipping_tv_color"/>
+
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_grey"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@color/grey_color"
+                android:paddingLeft="@dimen/default_side_margin"
+                android:gravity="center_vertical">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net Banking"
+                    android:layout_marginLeft="@dimen/default_side_margin"/>
+
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_grey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@color/grey_color"
+                android:paddingLeft="@dimen/default_side_margin"
+                android:gravity="center_vertical">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash/Card on Delivery"
+                    android:layout_marginLeft="@dimen/default_side_margin"/>
+
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_grey"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+            android:layout_marginLeft="@dimen/default_top_bottom_margin_large">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit Card We Accept"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/default_side_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/visa_card"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_top_bottom_margin_large"
+                    android:src="@drawable/master_card"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_top_bottom_margin"
+            android:layout_marginLeft="@dimen/default_top_bottom_margin_large"
+            android:layout_marginRight="@dimen/default_top_bottom_margin_large"
+            android:background="#333333"
+            android:gravity="center" >
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue to Payment"
+                android:textColor="@android:color/white"
+                android:paddingTop="@dimen/default_top_bottom_margin"
+                android:paddingBottom="@dimen/default_top_bottom_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

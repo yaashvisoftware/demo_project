@@ -11,6 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.spice.spicestyle.fragments.MoreFragment;
+import com.spice.spicestyle.fragments.OrderSuccessFragment;
+import com.spice.spicestyle.fragments.PaymentFragment;
+import com.spice.spicestyle.fragments.ShoppingCartFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,16 +43,19 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.menu_home:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                        Fragment fragmentPayment = new PaymentFragment();
+                        replaceFragment(fragmentPayment);
                         break;
                     case R.id.menu_search:
                         Toast.makeText(MainActivity.this, "Search", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menu_cart:
-                        Toast.makeText(MainActivity.this, "Cart", Toast.LENGTH_SHORT).show();
+                        ShoppingCartFragment shoppingCartFragment = new ShoppingCartFragment();
+                        replaceFragment(shoppingCartFragment);
                         break;
                     case R.id.menu_account:
-                        Toast.makeText(MainActivity.this, "account", Toast.LENGTH_SHORT).show();
+                        Fragment fragment = new OrderSuccessFragment();
+                        replaceFragment(fragment);
                         break;
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
@@ -69,15 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void replaceFragment(Fragment fragment){
 
-
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-
-// Replace whatever is in the fragment_container view with this fragment,
-// and add the transaction to the back stack if needed
         transaction.replace(R.id.llFragmentChange, fragment);
         transaction.addToBackStack(null);
-
-// Commit the transaction
         transaction.commit();
 
     }

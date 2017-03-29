@@ -3,9 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="line_grey">#E9E0E9</color>
+    <color name="line_grey">#DDDDDD</color>
     <color name="grey_color">#F9F9F9</color>
     <color name="item_name_color">#000000</color>
     <color name="shipping_tv_color">#5CB85C</color>
+    <color name="black_light">#353233</color>
+    <color name="hyperlink_text_color">#5891D1</color>
 
 </resources>

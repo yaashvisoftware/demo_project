@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/default_top_bottom_margin"
             android:background="@color/grey_color"
-            android:layout_marginLeft="@dimen/default_side_margin">
+            android:paddingLeft="@dimen/default_side_margin">
 
             <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:layout_width="wrap_content"
@@ -61,7 +62,7 @@
                 android:id="@+id/ivItemImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/bag"/>
 
         </LinearLayout>
 
@@ -76,13 +77,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/item_name_color"
-                android:text="Item name and description"/>
+                android:text="Vajero Blue Denim Patch Work Unisex Backpack"
+                android:textSize="@dimen/other_large_tv_size"/>
 
             <com.spice.spicestyle.textviewsbuttons.SimpleTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_top_bottom_margin"
-                android:text="SKU CODE:"/>
+                android:text="SKU CODE: 8907622002950"/>
             
             <LinearLayout
                 android:layout_marginTop="@dimen/default_top_bottom_margin"
@@ -129,7 +131,7 @@
                 android:layout_marginTop="@dimen/default_top_bottom_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Price: "/>
+                android:text="Price: \u20B9 3800"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -143,7 +145,7 @@
                     android:id="@+id/ivDecrementItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/substract"
+                    android:src="@drawable/minus"
                     android:layout_marginLeft="@dimen/default_side_margin"
                     android:layout_marginRight="@dimen/default_side_margin" />
 
@@ -158,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/default_side_margin"
                     android:layout_marginRight="@dimen/default_side_margin"
-                    android:text="0"
+                    android:text="1"
                     android:paddingTop="@dimen/default_side_margin"
                     android:paddingBottom="@dimen/default_side_margin"/>
 
@@ -201,11 +203,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:gravity="center">
-            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
                 android:id="@+id/tvItemPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rupee_symbol"/>
+                android:text="\u20B9 3800"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -241,7 +243,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:background="@android:color/transparent"
-                    android:padding="@dimen/default_side_margin"/>
+                    android:padding="@dimen/default_side_margin"
+                    android:singleLine="true"
+                    android:maxLines="1"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
