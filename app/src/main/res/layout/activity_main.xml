@@ -7,14 +7,21 @@
     android:gravity="center_horizontal"
     tools:context="com.spice.spicestyle.MainActivity">
 
+    <LinearLayout
+        android:id="@+id/llFragmentChange"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp"></LinearLayout>
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        app:itemTextColor="@android:color/black">
-        <include layout="@layout/demo"></include>
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/bottom_nav_items">
     </android.support.design.widget.BottomNavigationView>
 
   <!--  <android.support.design.widget.BottomNavigationView

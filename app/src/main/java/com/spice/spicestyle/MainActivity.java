@@ -1,15 +1,21 @@
 package com.spice.spicestyle;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.spice.spicestyle.fragments.MoreFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
+    private LinearLayout llFragmentChange;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void findViewIds(){
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        llFragmentChange = (LinearLayout) findViewById(R.id.llFragmentChange);
 
     }
-<<<<<<< HEAD
 
     private void setClickListenter(){
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -45,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_account:
                         Toast.makeText(MainActivity.this, "account", Toast.LENGTH_SHORT).show();
                         break;
-                    /*case R.id.menu_more:
-                        Toast.makeText(MainActivity.this, "More", Toast.LENGTH_SHORT).show();
-                        break;*/
+                    case R.id.menu_more:
+                        MoreFragment moreFragment = new MoreFragment();
+                        replaceFragment(moreFragment);
+
+                        break;
 
 
                 }
@@ -57,8 +65,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-=======
     //End of onCreate()
->>>>>>> 1235c4b332b338d7fe64093550c25c08fd921572
+
+    private void replaceFragment(Fragment fragment){
+
+
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+// Replace whatever is in the fragment_container view with this fragment,
+// and add the transaction to the back stack if needed
+        transaction.replace(R.id.llFragmentChange, fragment);
+        transaction.addToBackStack(null);
+
+// Commit the transaction
+        transaction.commit();
+
+    }
 }
