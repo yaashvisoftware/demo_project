@@ -6,21 +6,24 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.spice.spicestyle.fragments.MoreFragment;
+import com.spice.spicestyle.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private LinearLayout llFragmentChange;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         findViewIds();
 
@@ -40,16 +43,17 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.menu_home:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
-                        break;
+
                     case R.id.menu_search:
-                        Toast.makeText(MainActivity.this, "Search", Toast.LENGTH_SHORT).show();
+
+                        SearchFragment searchFragment = new SearchFragment();
+                        replaceFragment(searchFragment);
                         break;
                     case R.id.menu_cart:
-                        Toast.makeText(MainActivity.this, "Cart", Toast.LENGTH_SHORT).show();
+
                         break;
                     case R.id.menu_account:
-                        Toast.makeText(MainActivity.this, "account", Toast.LENGTH_SHORT).show();
+
                         break;
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
