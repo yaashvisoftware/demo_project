@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
 
     }
+<<<<<<< HEAD
 
     private void setClickListenter(){
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -57,4 +58,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+=======
+    //End of onCreate()
+>>>>>>> 1235c4b332b338d7fe64093550c25c08fd921572
 }
