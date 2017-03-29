@@ -6,6 +6,11 @@
     <dimen name="default_side_margin">5dp</dimen>
     <dimen name="default_side_margin_large">10dp</dimen>
     <dimen name="item_color_width">20dp</dimen>
+    <dimen name="number_of_items_size">25sp</dimen>
+    <dimen name="other_tv_sizes">16sp</dimen>
+    <dimen name="other_large_tv_size">18sp</dimen>
+
+    <dimen name="shopping_cart_items_decorator_height">10dp</dimen>
 
 
 </resources>

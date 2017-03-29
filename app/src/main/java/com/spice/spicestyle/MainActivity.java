@@ -11,7 +11,13 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.spice.spicestyle.fragments.MoreFragment;
+<<<<<<< HEAD
 import com.spice.spicestyle.fragments.SearchFragment;
+=======
+import com.spice.spicestyle.fragments.OrderSuccessFragment;
+import com.spice.spicestyle.fragments.PaymentFragment;
+import com.spice.spicestyle.fragments.ShoppingCartFragment;
+>>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,17 +49,32 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.menu_home:
+<<<<<<< HEAD
 
+=======
+                        Fragment fragmentPayment = new PaymentFragment();
+                        replaceFragment(fragmentPayment);
+                        break;
+>>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
                     case R.id.menu_search:
 
                         SearchFragment searchFragment = new SearchFragment();
                         replaceFragment(searchFragment);
                         break;
                     case R.id.menu_cart:
+<<<<<<< HEAD
 
                         break;
                     case R.id.menu_account:
 
+=======
+                        ShoppingCartFragment shoppingCartFragment = new ShoppingCartFragment();
+                        replaceFragment(shoppingCartFragment);
+                        break;
+                    case R.id.menu_account:
+                        Fragment fragment = new OrderSuccessFragment();
+                        replaceFragment(fragment);
+>>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
                         break;
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
@@ -73,15 +94,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void replaceFragment(Fragment fragment){
 
-
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-
-// Replace whatever is in the fragment_container view with this fragment,
-// and add the transaction to the back stack if needed
         transaction.replace(R.id.llFragmentChange, fragment);
         transaction.addToBackStack(null);
-
-// Commit the transaction
         transaction.commit();
 
     }

@@ -7,6 +7,9 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/default_top_bottom_margin_large"
     android:layout_marginBottom="@dimen/default_top_bottom_margin"
-    android:text="Shopping Cart - 0 Items">
+    android:text="Shopping Cart - 2 Items"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/number_of_items_size"
+    android:background="@android:color/white">
 
 </com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold>
