@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvNumberOfItems"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+    android:layout_marginBottom="@dimen/default_top_bottom_margin"
+    android:text="Shopping Cart - 0 Items">
+
+</com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold>
