@@ -9,14 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-import com.spice.spicestyle.fragments.MoreFragment;
+import com.spice.spicestyle.fragments.MyProfileFragment;
+import com.spice.spicestyle.fragments.RecentlyViewed;
 import com.spice.spicestyle.fragments.RegistrationFragment;
 import com.spice.spicestyle.fragments.SearchFragment;
 import com.spice.spicestyle.fragments.ShoppingCartFragment;
-import com.spice.spicestyle.fragments.MyAccountFragment;
-import com.spice.spicestyle.fragments.MyProfileFragment;
-import com.spice.spicestyle.fragments.PaymentFragment;
-import com.spice.spicestyle.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_more:
-                        MoreFragment moreFragment = new MoreFragment();
-                        replaceFragment(moreFragment);
+                        RecentlyViewed recentlyViewed = new RecentlyViewed();
+                        replaceFragment(recentlyViewed);
                         break;
                 }
 

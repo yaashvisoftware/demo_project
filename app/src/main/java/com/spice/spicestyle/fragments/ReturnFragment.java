@@ -10,9 +10,10 @@ import android.view.ViewGroup;
 import com.spice.spicestyle.R;
 
 
-public class MyReviewFragment extends Fragment {
+public class ReturnFragment extends Fragment {
 
-    public MyReviewFragment() {
+
+    public ReturnFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +24,7 @@ public class MyReviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_my_review, container, false);
+        View view = inflater.inflate(R.layout.fragment_return, container, false);
 
 
         // Inflate the layout for this fragment
@@ -33,8 +34,5 @@ public class MyReviewFragment extends Fragment {
     public void onButtonPressed(Uri uri) {
 
     }
-
-
-
 
 }
