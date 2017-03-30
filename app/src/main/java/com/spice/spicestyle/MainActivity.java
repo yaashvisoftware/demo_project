@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
@@ -14,12 +13,15 @@ import com.spice.spicestyle.fragments.MoreFragment;
 import com.spice.spicestyle.fragments.RegistrationFragment;
 import com.spice.spicestyle.fragments.SearchFragment;
 import com.spice.spicestyle.fragments.ShoppingCartFragment;
+import com.spice.spicestyle.fragments.MyAccountFragment;
+import com.spice.spicestyle.fragments.MyProfileFragment;
+import com.spice.spicestyle.fragments.PaymentFragment;
+import com.spice.spicestyle.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private LinearLayout llFragmentChange;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +57,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.menu_cart:
 
+                        MyProfileFragment myProfileFragment = new MyProfileFragment();
+                        replaceFragment(myProfileFragment);
                         break;
                     case R.id.menu_account:
                         ShoppingCartFragment shoppingCartFragment = new ShoppingCartFragment();
                         replaceFragment(shoppingCartFragment);
                         break;
+
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
                         replaceFragment(moreFragment);

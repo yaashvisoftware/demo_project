@@ -14,5 +14,8 @@
     <color name="button_red_bg_color">#D2322D</color>
     <color name="forgot_pwd_text_color">#428cc9</color>
     <color name="bg_color">#FFFFFF</color>
+    <color name="red_bg_color">#DA251D</color>
+    <color name="my_account_header_bg">#F3F3F3</color>
+>>>>>>> 2578a1fb4ca10a9fd8e6f6c552dfc825424f3e47
 
 </resources>
