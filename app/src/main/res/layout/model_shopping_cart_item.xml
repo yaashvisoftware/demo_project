@@ -81,6 +81,7 @@
                 android:textSize="@dimen/other_large_tv_size"/>
 
             <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:id="@+id/tvItemSkuCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_top_bottom_margin"
@@ -155,7 +156,7 @@
                     android:background="@color/line_grey"/>
 
                 <com.spice.spicestyle.textviewsbuttons.BlackTextView
-                    android:id="@+id/tvItemCount"
+                    android:id="@+id/tvItemQuantity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/default_side_margin"
@@ -239,6 +240,7 @@
                 android:weightSum="10">
 
                 <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                    android:id="@+id/etDiscount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
@@ -248,22 +250,18 @@
                     android:maxLines="1"/>
 
                 <LinearLayout
+                    android:id="@+id/llApplyCoupon"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:background="@drawable/green_with_dark_gray_boundary"
                     android:gravity="center">
-
-
                     <com.spice.spicestyle.textviewsbuttons.SimpleTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="APPLY"
                         android:textColor="@android:color/white"/>
-
                 </LinearLayout>
-                
-                
             </LinearLayout>
 
         </LinearLayout>
@@ -274,6 +272,7 @@
             android:layout_weight="3">
 
             <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:id="@+id/tvCouponAppliedText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
