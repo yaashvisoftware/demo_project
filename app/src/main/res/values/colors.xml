@@ -17,4 +17,5 @@
     <color name="red_bg_color">#DA251D</color>
     <color name="my_account_header_bg">#F3F3F3</color>
     <color name="my_orders_order_no_bg_border_color">#398439</color>
+    <color name="yellow_bt_color">#B96F00</color>
 </resources>

@@ -17,6 +17,14 @@ public class SearchModel {
         this.product_price = product_price;
     }
 
+    public SearchModel(int ic_launcher, String product_name, long product_price) {
+
+        this.ic_launcher = ic_launcher;
+        this.product_name = product_name;
+        this.product_price = product_price;
+
+    }
+
     public String getProduct_name() {
         return product_name;
     }

@@ -23,9 +23,9 @@
 
             <com.spice.spicestyle.textviewsbuttons.RoundedImageView
                 android:id="@+id/ivProfile"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:background="@mipmap/laptop"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/profile_user"
                 android:scaleType="centerCrop" />
 
         </LinearLayout>
