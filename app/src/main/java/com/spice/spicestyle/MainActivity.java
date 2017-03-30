@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.spice.spicestyle.fragments.MoreFragment;
+import com.spice.spicestyle.fragments.RegistrationFragment;
+import com.spice.spicestyle.fragments.SearchFragment;
+import com.spice.spicestyle.fragments.ShoppingCartFragment;
 import com.spice.spicestyle.fragments.MyAccountFragment;
 import com.spice.spicestyle.fragments.MyProfileFragment;
 import com.spice.spicestyle.fragments.PaymentFragment;
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.menu_home:
-                        Fragment fragmentPayment = new PaymentFragment();
+                        Fragment fragmentPayment = new RegistrationFragment();
                         replaceFragment(fragmentPayment);
                         break;
                     case R.id.menu_search:
@@ -58,18 +61,14 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(myProfileFragment);
                         break;
                     case R.id.menu_account:
-
-                        MyAccountFragment myAccountFragment = new MyAccountFragment();
-                        replaceFragment(myAccountFragment);
+                        ShoppingCartFragment shoppingCartFragment = new ShoppingCartFragment();
+                        replaceFragment(shoppingCartFragment);
                         break;
 
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
                         replaceFragment(moreFragment);
-
                         break;
-
-
                 }
 
 

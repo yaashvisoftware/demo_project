@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_top_bottom_margin_large"
+            android:layout_marginLeft="@dimen/default_top_bottom_margin"
+            android:layout_marginRight="@dimen/default_top_bottom_margin"
+            android:paddingBottom="@dimen/default_top_bottom_margin_small">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER A NEW ACCOUNT"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/number_of_items_size"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:text="Create an account on SpiceStyle"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                android:id="@+id/etYourName"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_boundary"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/user_account"
+                android:drawablePadding="@dimen/default_side_margin_large"
+                android:hint="Your Name"
+                android:singleLine="true"
+                android:maxLines="1"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                android:id="@+id/etYourEmail"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_boundary"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/default_side_margin_large"
+                android:hint="Your Email"
+                android:singleLine="true"
+                android:maxLines="1"/>
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                android:id="@+id/etPassword"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_boundary"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/default_side_margin_large"
+                android:hint="Your Password"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword" />
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                android:id="@+id/etConfirmPassword"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_boundary"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/default_side_margin_large"
+                android:hint="Confirm Password"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword" />
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleEditTextBlack
+                android:id="@+id/etMobileNo"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_boundary"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/default_side_margin_large"
+                android:hint="Your 10 Digit Mobile No."
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="10" />
+
+            <LinearLayout
+                android:id="@+id/llCreateMyAcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:padding="@dimen/default_side_margin_large"
+                android:background="@drawable/round_corner_red_button_bg"
+                android:gravity="center">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="CREATE MY ACCOUNT"
+                    android:textSize="@dimen/buttons_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/default_top_bottom_margin_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already a Member"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_top_bottom_margin_small"
+                android:padding="@dimen/default_side_margin_large"
+                android:background="@drawable/round_corner_red_button_bg"
+                android:gravity="center">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="LOGIN"
+                    android:textSize="@dimen/buttons_text_size"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
