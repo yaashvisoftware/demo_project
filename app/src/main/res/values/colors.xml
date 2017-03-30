@@ -7,12 +7,11 @@
     <color name="grey_color">#F9F9F9</color>
     <color name="item_name_color">#000000</color>
     <color name="shipping_tv_color">#5CB85C</color>
-<<<<<<< HEAD
+
     <color name="transparent_black">#00390528</color>
     <color name="bottom_navigation_color">#F9F9F9</color>
-=======
+
     <color name="black_light">#353233</color>
     <color name="hyperlink_text_color">#5891D1</color>
->>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
 
 </resources>
