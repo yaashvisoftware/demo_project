@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Spice Style.iml" filepath="$PROJECT_DIR$/Spice Style.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spice_Style.iml" filepath="$PROJECT_DIR$/Spice_Style.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
