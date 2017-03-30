@@ -6,24 +6,19 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.spice.spicestyle.fragments.MoreFragment;
-<<<<<<< HEAD
-import com.spice.spicestyle.fragments.SearchFragment;
-=======
-import com.spice.spicestyle.fragments.OrderSuccessFragment;
+import com.spice.spicestyle.fragments.MyAccountFragment;
+import com.spice.spicestyle.fragments.MyProfileFragment;
 import com.spice.spicestyle.fragments.PaymentFragment;
-import com.spice.spicestyle.fragments.ShoppingCartFragment;
->>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
+import com.spice.spicestyle.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private LinearLayout llFragmentChange;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,33 +44,25 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.menu_home:
-<<<<<<< HEAD
-
-=======
                         Fragment fragmentPayment = new PaymentFragment();
                         replaceFragment(fragmentPayment);
                         break;
->>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
                     case R.id.menu_search:
 
                         SearchFragment searchFragment = new SearchFragment();
                         replaceFragment(searchFragment);
                         break;
                     case R.id.menu_cart:
-<<<<<<< HEAD
 
+                        MyProfileFragment myProfileFragment = new MyProfileFragment();
+                        replaceFragment(myProfileFragment);
                         break;
                     case R.id.menu_account:
 
-=======
-                        ShoppingCartFragment shoppingCartFragment = new ShoppingCartFragment();
-                        replaceFragment(shoppingCartFragment);
+                        MyAccountFragment myAccountFragment = new MyAccountFragment();
+                        replaceFragment(myAccountFragment);
                         break;
-                    case R.id.menu_account:
-                        Fragment fragment = new OrderSuccessFragment();
-                        replaceFragment(fragment);
->>>>>>> fbf970a0500abdab6fde89e14dacd32bb199f23f
-                        break;
+
                     case R.id.menu_more:
                         MoreFragment moreFragment = new MoreFragment();
                         replaceFragment(moreFragment);

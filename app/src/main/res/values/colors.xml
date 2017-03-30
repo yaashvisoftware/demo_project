@@ -13,5 +13,7 @@
 
     <color name="black_light">#353233</color>
     <color name="hyperlink_text_color">#5891D1</color>
+    <color name="red_bg_color">#DA251D</color>
+    <color name="my_account_header_bg">#F3F3F3</color>
 
 </resources>
