@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:paddingTop="@dimen/default_top_bottom_margin"
+    android:paddingBottom="@dimen/default_top_bottom_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_boundary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_top_bottom_margin"
+            android:paddingBottom="@dimen/default_top_bottom_margin"
+            android:background="@drawable/gray_bg_with_gray_border">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_side_margin_large"
+                android:padding="@dimen/default_side_margin"
+                android:text="Order No.000704"
+                android:background="@drawable/round_corner_green_bg_dark_green_border"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_top_bottom_margin"
+            android:paddingLeft="@dimen/default_side_margin_large"
+            android:paddingRight="@dimen/default_side_margin_large">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="@dimen/default_side_margin">
+
+                    <ImageView
+                        android:id="@+id/ivItemImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="@dimen/default_side_margin">
+
+                    <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                        android:id="@+id/tvItemDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spice 4Sound Red Bluetooth Stereo Headset"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="@dimen/default_side_margin"
+                    android:gravity="center">
+
+                    <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                        android:id="@+id/tvItemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B93200"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOrderDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin_small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:background="@drawable/yellow_bg_dark_yellow_border">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTrackPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin_small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_round_boundary">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llReturnItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin_small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:background="@drawable/grey_round_boundary">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCancelOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_top_bottom_margin_small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_top_bottom_margin"
+                android:background="@drawable/gray_bg_round_dark_gray_border">
+
+                <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel Order"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="@dimen/default_top_bottom_margin"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/line_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_side_margin_large"
+            android:gravity="right">
+
+            <com.spice.spicestyle.textviewsbuttons.SimpleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: "/>
+
+            <com.spice.spicestyle.textviewsbuttons.BlackTextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B93200"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

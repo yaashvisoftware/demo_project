@@ -11,7 +11,7 @@ import com.spice.spicestyle.R;
 public class ChangePasswordFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View shoppingCartView = inflater.inflate(R.layout.fragment_registration, container, false);
+        View shoppingCartView = inflater.inflate(R.layout.fragment_change_password, container, false);
         return shoppingCartView;
     }
     //End of onCreateView()
